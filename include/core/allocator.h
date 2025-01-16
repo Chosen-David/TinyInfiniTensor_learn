@@ -25,6 +25,7 @@ namespace infini {
 
     // =================================== 作业 ===================================
     // TODO：可能需要设计一个数据结构来存储free block，以便于管理和合并
+    std::map<size_t, size_t> freeBlocks;
     // HINT: 可以使用一个 map 来存储 free block，key 为 block 的起始/结尾地址，value 为 block 的大小
     // =================================== 作业 ===================================
 
@@ -44,6 +45,9 @@ namespace infini {
     //     addr: head address offset of memory block to be free
     //     size: size of memory block to be freed
     void free(size_t addr, size_t size);
+    void*getBasePtr() ;
+    size_t getUsedMemory();
+   
 
     // function: perform actual memory allocation
     // return: pointer to the head address of the allocated memory
