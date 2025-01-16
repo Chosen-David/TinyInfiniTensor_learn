@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -fopenmp -g -Wall -Werror -Wno-error=deprecated-declarations -Wno-error=pointer-arith -O3 -DNDEBUG -UNDEBUG CMakeFiles/test_concat.dir/test/operators/test_concat.cc.o -o test_concat  -Wl,-rpath,/home/yswang/winter_learn/ai_compiler/TinyInfiniTensor/build/Release libInfiniTensor.so lib/libgtest_main.a lib/libgtest.a 
