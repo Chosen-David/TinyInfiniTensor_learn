@@ -73,7 +73,6 @@ namespace infini
         void addPredecessors(const Operator &op) { predecessors.emplace_back(op); }
         void addSuccessors(const Operator &op) { successors.emplace_back(op); }
         void removePredecessors(const Operator &op);
-        void removePredecessor(const Operator &op);
         void removeSuccessors(const Operator &op);
         void replaceInput(Tensor t1, Tensor t2);
     };
